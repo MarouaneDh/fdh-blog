@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Details - Vibrant Voyages</title>
+    <link rel="stylesheet" href="destination-details-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-header">
+      <div class="container nav-container">
+        <h1 class="logo">Fatma travels</h1>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="../explore.html" class="nav-link">Explore</a>
+            </li>
+            <li>
+              <a href="../../stories/stories.html" class="nav-link">Stories</a>
+            </li>
+            <li>
+              <a href="../../gallery/gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="../../connect/connect.html" class="nav-link">Connect</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="destination-details">
+        <div
+          class="destination-hero"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ),
+              url('../../images/destination2.JPG');
+          "
+        >
+          <h2>Santorini Sunsets</h2>
+        </div>
+        <div class="destination-content">
+          <p>
+            Santorini, Greece, is a breathtaking island known for its stunning
+            sunsets, whitewashed buildings, and dramatic cliffs overlooking the
+            Aegean Sea. This destination offers a unique blend of natural
+            beauty, rich history, and vibrant culture.
+          </p>
+          <h3>Things to Do:</h3>
+          <ul>
+            <li>Watch the sunset from Oia.</li>
+            <li>Explore the ancient ruins of Akrotiri.</li>
+            <li>Relax on the black sand beaches.</li>
+            <li>Take a boat tour to the volcanic islands.</li>
+            <li>Sample local wines at a vineyard.</li>
+          </ul>
+          <h3>Best Time to Visit:</h3>
+          <p>
+            The best time to visit Santorini is during the shoulder seasons
+            (April-May and September-October) when the weather is pleasant, and
+            the crowds are smaller.
+          </p>
+          <div class="gallery-grid">
+            <img
+              src="../../images/destination3.JPG"
+              alt="Santorini 1"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination3.JPG')"
+            />
+            <img
+              src="../../images/destination4.JPG"
+              alt="Santorini 2"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination4.JPG')"
+            />
+            <img
+              src="../../images/destination5.JPG"
+              alt="Santorini 3"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination5.JPG')"
+            />
+          </div>
+        </div>
+      </section>
+      <div id="fullscreen-overlay" onclick="hideFullscreen()">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Vibrant Voyages. Let the adventure begin!</p>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+    <script>
+      function showFullscreen(imageSrc) {
+        document.getElementById('fullscreen-image').src = imageSrc;
+        document.getElementById('fullscreen-overlay').style.display = 'flex';
+      }
+
+      function hideFullscreen() {
+        document.getElementById('fullscreen-overlay').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
