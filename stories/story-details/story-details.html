@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Details - Vibrant Voyages</title>
+    <link rel="stylesheet" href="story-details-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-header">
+      <div class="container nav-container">
+        <h1 class="logo">Fatma travels</h1>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="../../index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="../../explore/explore.html" class="nav-link">Explore</a>
+            </li>
+            <li>
+              <a href="../stories.html" class="nav-link">Stories</a>
+            </li>
+            <li>
+              <a href="../../gallery/gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="../../connect/connect.html" class="nav-link">Connect</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="story-details">
+        <div class="story-hero">
+          <img src="../../images/paris.JPG" alt="A Solo Adventure in Italy" />
+          <h2>A Solo Adventure in Italy</h2>
+        </div>
+        <div class="story-content">
+          <p>
+            My journey to Italy began with a spontaneous decision. I had always
+            dreamed of exploring the historic cities and picturesque
+            countryside, but never found the right time or company. So, I
+            decided to go solo.
+          </p>
+          <p>
+            I started in Rome, where I spent days wandering through ancient
+            ruins, marveling at the Colosseum, and tossing a coin into the Trevi
+            Fountain. The city was a whirlwind of history and culture, and I was
+            completely captivated.
+          </p>
+          <p>
+            From Rome, I took a train to Florence, the birthplace of the
+            Renaissance. I explored the Uffizi Gallery, climbed to the top of
+            the Duomo, and crossed the Ponte Vecchio. The city was a feast for
+            the eyes, with its stunning architecture and art.
+          </p>
+          <p>
+            Next, I ventured into the Tuscan countryside, where I rented a car
+            and drove through rolling hills and vineyards. I visited charming
+            medieval towns, sampled local wines, and indulged in delicious
+            Italian cuisine.
+          </p>
+          <p>
+            The entire experience was transformative. I learned to rely on
+            myself, to navigate unfamiliar places, and to embrace the
+            unexpected. I discovered a newfound sense of independence and
+            confidence.
+          </p>
+          <p>
+            Italy taught me that solo travel is not just about seeing new
+            places, but also about discovering yourself. It was an adventure I
+            will never forget.
+          </p>
+          <div class="gallery-grid">
+            <img
+              src="../../images/destination4.JPG"
+              alt="Italy 1"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination4.JPG')"
+            />
+            <img
+              src="../../images/destination5.JPG"
+              alt="Italy 2"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination5.JPG')"
+            />
+            <img
+              src="../../images/destination6.JPG"
+              alt="Italy 3"
+              class="gallery-image"
+              onclick="showFullscreen('../../images/destination6.JPG')"
+            />
+          </div>
+        </div>
+      </section>
+      <div id="fullscreen-overlay" onclick="hideFullscreen()">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Vibrant Voyages. Let the adventure begin!</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      function showFullscreen(imageSrc) {
+        document.getElementById('fullscreen-image').src = imageSrc;
+        document.getElementById('fullscreen-overlay').style.display = 'flex';
+      }
+
+      function hideFullscreen() {
+        document.getElementById('fullscreen-overlay').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
